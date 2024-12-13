@@ -19,15 +19,20 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install --locked --git https://github.com/MystenLabs/sui.git --branch testnet sui --features tracing
 
 ```
-  y ⇨ Enter ⇨０
 
 
-# 3.フォルダの中身
+# 3.SUI  setup
 ```
-unichain(フォルダ）
-├── 
+sui client
+
 ```
-中身が空だと思うので
+ y ⇨ Enter ⇨０ &&
+
+ 上記の手順を完了すると、次のファイルがローカルに作成されます (必要に応じて、~ をホーム フォルダー ディレクトリに置き換えてください)。
+
+~/.sui/sui_config/client.yaml- Suiクライアント構成ファイル
+~/.sui/sui_config/sui.keystore- Sui キーストア ファイル (秘密鍵が含まれています)
+
 ```
 nano ファイル名.sol
 ```
