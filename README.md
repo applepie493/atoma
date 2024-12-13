@@ -8,7 +8,6 @@ Atomaのテストネットがあり、ノードを建ててみました。
 # 1.ツールのダウンロード
 ```
 brew install curl git cmake gcc openssl pkg-config llvm libpq
-
 ```
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -17,14 +16,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # 2.SUI CLI
 ```
 cargo install --locked --git https://github.com/MystenLabs/sui.git --branch testnet sui --features tracing
-
 ```
 
 
 # 3.SUI  setup
 ```
 sui client
-
 ```
  y ⇨ Enter ⇨０
 
