@@ -26,7 +26,7 @@ cargo install --locked --git https://github.com/MystenLabs/sui.git --branch test
 sui client
 
 ```
- y ⇨ Enter ⇨０ &&
+ y ⇨ Enter ⇨０
 
  上記の手順を完了すると、次のファイルがローカルに作成されます (必要に応じて、~ をホーム フォルダー ディレクトリに置き換えてください)。
 
