@@ -31,33 +31,18 @@ sui client
 
 ~/.sui/sui_config/sui.keystore- Sui キーストア ファイル (秘密鍵が含まれています)
 
-```
-nano ファイル名.sol
-```
-で作成し、中身は
-```
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-
-contract ファイル名 is ERC20 {
-    // トークンの初期供給量
-    uint256 constant _initialSupply = 1000000 * 10**18;
-
-    // コンストラクタ: トークンの名前とシンボルを指定
-    constructor() ERC20("ファイル名", "MTK") {
-        // コントラクトのデプロイ時に、デプロイアドレスに初期供給量を割り当て
-        _mint(msg.sender, _initialSupply);
-    }
-}
+## ４.Faucet
 ```
-## ４.デプロイ
+sui client faucet
 ```
-forge create ファイル名.sol:ファイル名 --rpc-url Alchemy等からUnichainから取得 --private-key ぷらいべーときー
 ```
-Transaction hash: 0x4e5aaec1a712324d30b11c142afa49aae6d7032a0ba0be3569d53f7259f75c33
-などが表示されたらOK
+sui client call --package "0xa1b2ce1a52abc52c5d21be9da0f752dbd587018bc666c5298f778f42de26df1d" --module "toma" --function "faucet" --args "0xfdddd6fb95509ea36f44f06d0d0a2f5868dac2bda1423d204bdc9f458115ff75" 100000000000
+```
+```
+sui client balance
+```
+上記でSUIとTomaの残高が表示されていればOK
 
 ## ５.デプロイのときにエラーが出た場合
 import "@openzeppelin　←がインストールされてないよ
