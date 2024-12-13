@@ -31,6 +31,7 @@ sui client
  上記の手順を完了すると、次のファイルがローカルに作成されます (必要に応じて、~ をホーム フォルダー ディレクトリに置き換えてください)。
 
 ~/.sui/sui_config/client.yaml- Suiクライアント構成ファイル
+
 ~/.sui/sui_config/sui.keystore- Sui キーストア ファイル (秘密鍵が含まれています)
 
 ```
