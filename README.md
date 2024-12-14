@@ -49,8 +49,14 @@ sui client balance
 git clone https://github.com/atoma-network/atoma-contracts
 cd atoma-contracts/sui/
 ```
+## 6.Nodeの登録
+```
+./dev/cli db register-node \
+  --package "0xc05bae323433740c969d8cf938c48d7559490be5f8dde158792e7a0623787013"
+```
+・SUIのバージョンエラーは解消しておいた方が良い
 
-
+・ワークスペースがメンバーとして見られていなかったので、Cargo.tomlを修正
 
 # 5.参考文献
 <https://docs.unichain.org/docs/building-on-unichain/deploy-a-smart-contract>
